@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Discover your true identity</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Alexandre Leblanc" />
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		
+		<style>
+		body {
+  			background-image: url('./assets/images/konamibg.jpg');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: cover;
+		}
+		</style>
+
+    </head>
+	
+	<body class="smoothscroll enable-animation">
+		
+		<div class="container text-center">
+			<h1>What decribes you?</h1><br />
+		
+
+			<!-- Buzzword1 -->
+            <div id="container">
+                <ul>
+                    <li class="row justify-content-center">
+                        <div class="col-md-1"><h3>Ying</h3></div>
+                        <select class="col-md-1" id="activityHybrid" name="contact[activityHybrid][required]">
+                            <option value="">Select</option>
+                            <option value="Access">Access</option>
+                            <option value="Android">Android</option>
+                            <option value="Cheat">Cheat</option>
+                            <option value="Geek">Geek</option>
+                            <option value="Mainframe">Mainframe</option>
+                            <option value="Matrix">Matrix</option>
+                            <option value="Malware">Malware</option>
+                            <option value="Megabyte">Megabyte</option>
+                            <option value="Mobile">Mobile</option>
+                        </select>
+                    </li>
+
+					<li class="row justify-content-center">
+                        <div class="col-md-1"><h3>Yang</h3></div>
+                        <select class="col-md-1" id="activityHybrid" name="contact[activityHybrid][required]">
+                            <option value="">Select</option>
+                            <option value="Backup">Backup</option>
+                            <option value="Bandwidth">Bandwidth</option>
+                            <option value="Benchmark">Benchmark</option>
+                            <option value="Binary">Binary</option>
+                            <option value="Bug">Bug</option>
+                            <option value="Bus">Bus</option>
+                            <option value="Byte">Byte</option>
+                            <option value="Cache">Cache</option>
+                            <option value="Chip">Chip</option>
+                            <option value="Code">Code</option>
+                            <option value="Cookie">Cookie</option>
+                            <option value="Data">Data</option>
+                            <option value="Debug">Debug</option>
+                            <option value="Desktop">Desktop</option>
+                            <option value="Develop">Develop</option>
+                            <option value="Digital">Digital</option>
+                            <option value="Disk">Disk</option>
+                            <option value="Emulator">Emulator</option>
+                            <option value="Floppy">Floppy disk</option>
+                            <option value="GIF">GIF</option>
+                            <option value="Kernel">Kernel</option>
+                            <option value="Overclock">Overclock</option>
+                            <option value="Pixel">Pixel</option>
+                            <option value="Virtual">Virtual</option>
+							<option value="Wireless">Wireless</option>
+							<option value="Zip">Zip</option>
+                        </select>
+                    </li>
+                </ul>               
+            </div>
+			</div>
+					           
+           	
+			<!--Ninja Name -->
+			<div class="container text-center">
+				<div class="container heading-title heading-dotted">
+					<h2>Ninja Name</h2>
+				</div>	
+
+				<div class="container row justify-content-center text-center">
+					<div class="row justify-content-center">
+							<div class="col-md-4"><input required type="text" value="" style="text-align: right" class="form-control" name="contact[finalPrice][required]" id="finalPrice" readonly></div>
+						</li>
+					</ul>  
+				</div>
+			</div>
+			</section>
+
+            <!-- Konami Code Selector -->
+            <div id="hybridForm">
+				<div class="row justify-content-center">
+
+
+
+				</div>
+                         
+            </div>
+
+            <!--True Warrior -->
+			<div class="container">
+				<div class="container heading-title heading-dotted text-center">
+					<h2>Show your skills!</h2>
+				</div>	
+
+				<div class="container row justify-content-center text-center">
+					<ul>
+						<li class="row justify-content-center ">
+							<div class="col-md-8 text-left"><p>Number of Elevators Required</p></div>
+							<div class="col-md-4"><input required type="text" value="" style="text-align: right" class="form-control" name="contact[nbElevators][required]" id="nbElevators" readonly></div>
+						</li>
+
+						<li class="row justify-content-center">
+							<div class="col-md-8 text-left"><p>Elevators Cost</p></div>
+							<div class="col-md-4"><input required type="text" value="" style="text-align: right" class="form-control" name="contact[elevatorsCost][required]" id="elevatorsCost" readonly></div>
+						</li>
+
+						<li class="row justify-content-center">
+							<div class="col-md-8 text-left"><p>Installation Fee</p></div>
+							<div class="col-md-4"><input required type="text" value="" style="text-align: right" class="form-control" name="contact[installationFee][required]" id="installationFee" readonly></div>
+						</li>
+
+						<li class="row justify-content-center">
+							<div class="col-md-8 text-left"><p style="font-weight:bold">Total Estimated Cost</p></div>
+							<div class="col-md-4"><input required type="text" value="" style="text-align: right" class="form-control" name="contact[finalPrice][required]" id="finalPrice" readonly></div>
+						</li>
+					</ul>  
+				</div>
+			</div>
+		</div>
+		
+				
+			<script> 
+
+			//ShowHide Function
+
+				document.addEventListener("DOMContentLoaded", function(event){
+						console.log('DOMContentLoaded');
+						document.getElementById("residentialForm").style.display="none";
+						document.getElementById("commercialForm").style.display="none";
+						document.getElementById("corporateForm").style.display="none";
+						document.getElementById("hybridForm").style.display="none";
+
+						valueReset();
+
+					});
+
+				function showHide(value) {
+
+					console.log("showHide");
+
+					var buildingType = document.getElementById("buildingType").value;
+					var prodLineSelect = document.querySelector("input[name='prodLineSelect']:checked").value;
+
+					console.log("prodLineSelect", prodLineSelect);
+					console.log("buildingType", buildingType);
+					
+					if(buildingType == "select"){
+
+						valueReset();
+
+						document.getElementById("residentialForm").style.display = "none";
+						document.getElementById("commercialForm").style.display = "none";
+						document.getElementById("corporateForm").style.display = "none";
+						document.getElementById("hybridForm").style.display = "none";
+						
+						totalCost();
+
+						}
+
+					else if(buildingType == "residential"){
+
+						valueReset();
+						
+						document.getElementById("residentialForm").style.display = "block";
+						document.getElementById("commercialForm").style.display = "none";
+						document.getElementById("corporateForm").style.display = "none";
+						document.getElementById("hybridForm").style.display = "none";
+						
+						var apartmentsResidential = parseInt(document.getElementById("apartmentsResidential").value);
+						var floorsResidential = parseInt(document.getElementById("floorsResidential").value);
+						var basementsResidential = parseInt(document.getElementById("basementsResidential").value);
+						var floorToCount = floorsResidential - basementsResidential;
+
+						var avgDoorsPerFloor = Math.ceil(apartmentsResidential / floorToCount);
+						var shaftCalResidential = Math.ceil(avgDoorsPerFloor / 6);
+						var columnCalResidential = Math.ceil(floorToCount / 20);
+
+						var totalCagesResidentials = shaftCalResidential * columnCalResidential;
+
+						if(!isNaN(totalCagesResidentials)){
+							document.getElementById("nbElevators").value = totalCagesResidentials.toLocaleString("fr-FR");
+						}
+						
+						totalCost();
+
+						}
+
+					else if(buildingType == "commercial"){
+
+						valueReset();
+
+						document.getElementById("residentialForm").style.display="none";
+						document.getElementById("commercialForm").style.display="block";
+						document.getElementById("corporateForm").style.display="none";
+						document.getElementById("hybridForm").style.display="none";
+						
+						var totalCagesCommercial = parseInt(document.getElementById("cagesCommercial").value);
+						
+						if(!isNaN(totalCagesCommercial)){
+						document.getElementById("nbElevators").value = totalCagesCommercial.toLocaleString("fr-FR");
+						}
+
+						totalCost();
+
+						}
+
+					else if(buildingType == "corporate"){
+						
+						valueReset();
+
+						document.getElementById("residentialForm").style.display="none";
+						document.getElementById("commercialForm").style.display="none";
+						document.getElementById("corporateForm").style.display="block";
+						document.getElementById("hybridForm").style.display="none";
+
+						var occupantsCorporate = parseInt(document.getElementById("occupantsCorporate").value);
+						var floorsCorporate = parseInt(document.getElementById("floorsCorporate").value);
+						var totalOccupantsCorporate =  occupantsCorporate * floorsCorporate;
+						var estimateElevators = Math.ceil(totalOccupantsCorporate/1000);
+						var nbColumns = Math.ceil(floorsCorporate/20);
+						var nbElevatorsColumns = Math.ceil(estimateElevators/nbColumns);
+						var totalCagesCorporate = nbElevatorsColumns * nbColumns;
+					
+						if(!isNaN(totalCagesCorporate)){
+						document.getElementById("nbElevators").value = totalCagesCorporate.toLocaleString("fr-FR");
+						}
+
+						totalCost();
+
+						}
+						
+					else if(buildingType == "hybrid"){
+
+						valueReset();
+
+						document.getElementById("residentialForm").style.display="none";
+						document.getElementById("commercialForm").style.display="none";
+						document.getElementById("corporateForm").style.display="none";
+						document.getElementById("hybridForm").style.display="block";
+						
+						var occupantsHybrid = parseInt(document.getElementById("occupantsHybrid").value);
+						var floorsHybrid = parseInt(document.getElementById("floorsHybrid").value);
+						var totalOccupantsHybrid =  occupantsHybrid * floorsHybrid;
+						var estimateElevators = Math.ceil(totalOccupantsHybrid/1000);
+						var nbColumns = Math.ceil(floorsHybrid/20);
+						var nbElevatorsColumns = Math.ceil(estimateElevators/nbColumns);
+						var totalCagesHybrid = nbElevatorsColumns * nbColumns;
+						
+						if(!isNaN(totalCagesHybrid)){
+						document.getElementById("nbElevators").value = totalCagesHybrid.toLocaleString("fr-FR");
+						}
+
+						totalCost();
+
+						}
+
+						
+					};             
+
+	//Total Cost Function
+
+				function valueReset(){
+					document.getElementById("nbElevators").value = "";
+					document.getElementById("elevatorsCost").value = "";
+					document.getElementById("installationFee").value = "";
+					document.getElementById("finalPrice").value = "";
+
+				};
+
+				function totalCost(value) {
+
+					console.log("totalCost");
+
+					var prodLineSelect = document.querySelector("input[name='prodLineSelect']:checked").value;
+
+					console.log("prodLineSelect", prodLineSelect); 
+
+					if(prodLineSelect == "standardRadio") {
+
+						var totalElevators = Math.round(parseInt(document.getElementById("nbElevators").value));
+
+						var standardElevatorsCost = totalElevators * 7565;
+						var standardElevatorsInstall = standardElevatorsCost * 0.1;
+						var standardElevatorsFinal = standardElevatorsCost + standardElevatorsInstall;
+						
+						if(!isNaN(standardElevatorsCost)){
+						document.getElementById("elevatorsCost").value = standardElevatorsCost.toLocaleString("en-CA", {style: "decimal", minimumFractionDigits: 2}) + "$";
+						document.getElementById("installationFee").value = standardElevatorsInstall.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						document.getElementById("finalPrice").value = standardElevatorsFinal.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						}
+					}
+
+					else if(prodLineSelect == "premiumRadio") {
+						var totalElevators = parseInt(document.getElementById("nbElevators").value);
+						var premiumElevatorsCost = totalElevators * 12345;
+						var premiumElevatorsInstall = premiumElevatorsCost * 0.13;
+						var premiumElevatorsFinal = premiumElevatorsCost + premiumElevatorsInstall;
+
+						if(!isNaN(premiumElevatorsCost)){
+						document.getElementById("elevatorsCost").value = premiumElevatorsCost.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						document.getElementById("installationFee").value = premiumElevatorsInstall.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						document.getElementById("finalPrice").value = premiumElevatorsFinal.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						}
+					}	
+					
+					else if(prodLineSelect == "exceliumRadio") {
+						var totalElevators = parseInt(document.getElementById("nbElevators").value);
+						var exceliumElevatorsCost = totalElevators * 15400;
+						var exceliumElevatorsInstall = exceliumElevatorsCost * 0.16;
+						var exceliumElevatorsFinal = exceliumElevatorsCost + exceliumElevatorsInstall;
+
+						if(!isNaN(exceliumElevatorsCost)){
+						document.getElementById("elevatorsCost").value = exceliumElevatorsCost.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						document.getElementById("installationFee").value = exceliumElevatorsInstall.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						document.getElementById("finalPrice").value = exceliumElevatorsFinal.toLocaleString("en-CA", {minimumFractionDigits: 2}) + "$";
+						}
+					}
+
+				};	
+
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+	</body>
+</html>

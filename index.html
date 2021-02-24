@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Discover your true identity</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Alexandre Leblanc" />
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		
+		<style>
+		body {
+  			background-image: url('./assets/images/ninjabackground1.jpg');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: cover;
+		}
+		</style>
+
+    </head>
+	
+	<body class="smoothscroll enable-animation">
+		
+		<div class="container text-center">
+			<h1>What decribes you?</h1></br>
+					
+            <div id="container">
+                <ul>
+                    <li class="row justify-content-center">
+                        <div class="col-md-1"><h3>Ying</h3></div>
+                        <select class="col-md-1" id="yingbuzz">
+                            <option value="">Select</option>
+                            <option value="Access">Access</option>
+                            <option value="Android">Android</option>
+                            <option value="Cheat">Cheat</option>
+                            <option value="Geek">Geek</option>
+                            <option value="Mainframe">Mainframe</option>
+                            <option value="Matrix">Matrix</option>
+                            <option value="Malware">Malware</option>
+                            <option value="Megabyte">Megabyte</option>
+                            <option value="Mobile">Mobile</option>
+                        </select>
+                    </li>
+
+					<li class="row justify-content-center">
+                        <div class="col-md-1"><h3>Yang</h3></div>
+                        <select class="col-md-1" id="yangbuzz">
+                            <option value="">Select</option>
+                            <option value="Backup">Backup</option>
+                            <option value="Bandwidth">Bandwidth</option>
+                            <option value="Benchmark">Benchmark</option>
+                            <option value="Binary">Binary</option>
+                            <option value="Bug">Bug</option>
+                            <option value="Bus">Bus</option>
+                            <option value="Byte">Byte</option>
+                            <option value="Cache">Cache</option>
+                            <option value="Chip">Chip</option>
+                            <option value="Code">Code</option>
+                            <option value="Cookie">Cookie</option>
+                            <option value="Data">Data</option>
+                            <option value="Debug">Debug</option>
+                            <option value="Desktop">Desktop</option>
+                            <option value="Develop">Develop</option>
+                            <option value="Digital">Digital</option>
+                            <option value="Disk">Disk</option>
+                            <option value="Emulator">Emulator</option>
+                            <option value="Floppy">Floppy disk</option>
+                            <option value="GIF">GIF</option>
+                            <option value="Kernel">Kernel</option>
+                            <option value="Overclock">Overclock</option>
+                            <option value="Pixel">Pixel</option>
+                            <option value="Virtual">Virtual</option>
+							<option value="Wireless">Wireless</option>
+							<option value="Zip">Zip</option>
+                        </select>
+                    </li>
+                </ul>               
+            </div>
+			<div class="btn btn-danger">Meet your destiny</div>
+			
+		</div>
+
+		<br />
+           	
+		<!--Ninja Name -->
+		<div class="container text-center">
+			<div class="container heading-title heading-dotted">
+				<h2>Ninja Name</h2>
+			</div>	
+
+			<div class="container row justify-content-center text-center">
+				<div class="row justify-content-center">
+					<div class="col-md-4"><input value="True Warrior" style="text-align: center" class="form-control" name="ninjaname" id="ninjaname" readonly></div>
+				</div>
+			</div>
+			<br />
+
+			<div class="btn btn-danger" id="konamitestbtn" name="konamitestbtn" href="/index-konami.html" onchange="showDiv()">Prove yourself</div>
+		</div>
+		
+				
+			<script> 
+
+			//ShowHide Function
+
+				document.addEventListener("DOMContentLoaded", function(event){
+						
+					document.getElementById("konamitestbtn").style.display="none";
+						
+					valueReset();
+
+				});
+
+				function showDiv() {
+
+					console.log("showHide");
+
+					var ninjaName = document.getElementById("ninjaname").value;
+					
+					if(ninjaName == "True Warrior"){
+
+						valueReset();
+						
+						document.getElementById("konamitestbtn").style.display = "block";
+						
+						}
+					};
+	
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+	</body>
+</html>
