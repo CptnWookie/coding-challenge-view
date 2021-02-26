@@ -15,7 +15,8 @@ function ninjify() {
   }  
   else {
     $.ajax({
-        url: 'https://coding-challenge-tlm2021.herokuapp.com/ninjify' + "?x=" + $("#yingbuzz").val() + "," + $("#yangbuzz").val(),
+      // url: 'https://coding-challenge-tlm2021.herokuapp.com/ninjify' + "?x=" + $("#yingbuzz").val() + "," + $("#yangbuzz").val(),
+      url: process.env.ENDPOINT + "?x=" + $("#yingbuzz").val() + "," + $("#yangbuzz").val(),
         contentType: "application/json",
         dataType: 'json',
         success: function(response) {
