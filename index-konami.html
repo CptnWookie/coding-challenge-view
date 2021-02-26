@@ -13,146 +13,178 @@
   			background-image: url('./assets/images/konamibg.png');
   			background-repeat: no-repeat;
   			background-attachment: fixed;
-            background-position: center;
-  			background-size: auto;
+  			background-size: cover;
+			background-position: center;
+			width: auto;  
+			height: 100%;
 		}
 		</style>
 
     </head>
 	
 	<body class="smoothscroll enable-animation">
-		
-		<div class="container text-center">
-			<h1 style="color: white">Warrior's challenge</h1><br />
-		
-            <div id="container">
-                <select class="col" id="keyOne">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyTwo">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyThree">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyFour">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyFive">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keySix">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keySeven">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyEight">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyNine">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyTen">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-                <select class="col" id="keyEleven">
-                    <option value="">Select</option>
-                    <option value="UP">UP</option>
-                    <option value="DOWN">DOWN</option>
-                    <option value="LEFT">LEFT</option>
-                    <option value="RIGHT">RIGHT</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="START">START</option>
-                    <option value="SELECT">SELECT</option>
-                </select>
-            </div><br />
-  
-            <div class="btn btn-primary" onclick="warrior()">Are you worthy?</div>
+		<div class="container-fluid">
+            <div class="container text-center">
+                <h1 style="color: white">Warrior's challenge</h1><br />
+                <p style="color: darkgray;">The answer is here...</p>
+                <p style="color: darkgray;">but you can't see it! </p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*   UP    *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*   UP    *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  DOWN   *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  DOWN   *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  LEFT   *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  RIGHT  *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  LEFT   *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  RIGHT  *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*    B    *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*    A    *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                <p style="color:darkgray; display: none;">*  Start  *</p>
+                <p style="color:darkgray; display: none;">***********</p>
+                
             
-            <div class="container">
-                <div style="color: white; display: none;" id="konamishow" name="konamishow" ><h2>KONAMI !!!!!!!!!!!!</h2></div>
+
+                <!-- This section was supposed to be the original easter egg but the onclick show function never worked -->
+                
+                <!-- <div id="container">
+                    <select class="col" id="keyOne">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyTwo">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyThree">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyFour">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyFive">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keySix">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keySeven">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyEight">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyNine">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyTen">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                    <select class="col" id="keyEleven">
+                        <option value="">Select</option>
+                        <option value="UP">UP</option>
+                        <option value="DOWN">DOWN</option>
+                        <option value="LEFT">LEFT</option>
+                        <option value="RIGHT">RIGHT</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="START">START</option>
+                        <option value="SELECT">SELECT</option>
+                    </select>
+                </div><br />
+    
+                <div class="btn btn-primary" onclick="warrior()">Are you worthy?</div>
+                
+                <div class="container">
+                    <div style="color: white; display:none;" id="konami" name="konami" ><h2>You're the Choosen One !!!!</h2></div>
+                </div> -->
             </div>
         </div>
 		
