@@ -5,6 +5,7 @@ function ninjify() {
 
   if (ying == "Cheat" && yang == "Code") {
     $("#ninjaname").val("True Warrior");
+    $("#konamibtn").show();
   }
   else if (ying == "Cheat" && yang != "Code") {
     $("#ninjaname").val('"Cheat" is missing something ...');

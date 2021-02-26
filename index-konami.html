@@ -13,7 +13,8 @@
   			background-image: url('./assets/images/konamibg.png');
   			background-repeat: no-repeat;
   			background-attachment: fixed;
-  			background-size: cover;
+            background-position: center;
+  			background-size: auto;
 		}
 		</style>
 
@@ -25,7 +26,7 @@
 			<h1 style="color: white">Warrior's challenge</h1><br />
 		
             <div id="container">
-                <select class="col" id="keyOne" name="contact[keyOne][required]">
+                <select class="col" id="keyOne">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -36,7 +37,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyTwo" name="contact[keyTwo][required]">
+                <select class="col" id="keyTwo">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -47,7 +48,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyThree" name="contact[keyThree][required]">
+                <select class="col" id="keyThree">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -58,7 +59,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyFour" name="contact[keyFour][required]">
+                <select class="col" id="keyFour">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -69,7 +70,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyFive" name="contact[keyFive][required]">
+                <select class="col" id="keyFive">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -80,7 +81,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keySix" name="contact[keySix][required]">
+                <select class="col" id="keySix">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -91,7 +92,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keySeven" name="contact[keySeven][required]">
+                <select class="col" id="keySeven">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -102,7 +103,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyEight" name="contact[keyEight][required]">
+                <select class="col" id="keyEight">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -113,7 +114,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyNine" name="contact[keyNine][required]">
+                <select class="col" id="keyNine">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -124,7 +125,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyTen" name="contact[keyTen][required]">
+                <select class="col" id="keyTen">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -135,7 +136,7 @@
                     <option value="START">START</option>
                     <option value="SELECT">SELECT</option>
                 </select>
-                <select class="col" id="keyEleven" name="contact[keyEleven][required]">
+                <select class="col" id="keyEleven">
                     <option value="">Select</option>
                     <option value="UP">UP</option>
                     <option value="DOWN">DOWN</option>
@@ -151,51 +152,12 @@
             <div class="btn btn-primary" onclick="warrior()">Are you worthy?</div>
             
             <div class="container">
-                <div style="color: white" id="konami" name="konami" ><h2>KONAMI !!!!!!!!!!!!</h2></div>
+                <div style="color: white; display: none;" id="konamishow" name="konamishow" ><h2>KONAMI !!!!!!!!!!!!</h2></div>
             </div>
         </div>
-					           
-        				
-        <script> 
-
-        //ShowHide Function
-
-            document.addEventListener("DOMContentLoaded", function(event){
-                    console.log('DOMContentLoaded');
-                    document.getElementById("konami").style.display="none";
-                    valueReset();
-
-                });
-
-            function warrior(value) {
-                 var keyone = document.getElementById("keyOne").value;
-                 var keytwo = document.getElementById("keyTwo").value;
-                 var keythree = document.getElementById("keyThree").value;
-                 var keyfour = document.getElementById("keyFour").value;
-                 var keyfive = document.getElementById("keyFive").value;
-                 var keysix = document.getElementById("keySix").value;
-                 var keyseven = document.getElementById("keySeven").value;
-                 var keyeight = document.getElementById("keyEight").value;
-                 var keynine = document.getElementById("keyNine").value;
-                 var keyten = document.getElementById("keyTen").value;
-                 var keyeleven = document.getElementById("keyElevan").value;
-
-                 if (keyone == "UP" && keytwo == "UP" && keythree == "DOWN" && keyfour == "DOWN" && keyfive == "LEFT" && keysix == "RIGHT" && keyseven == "LEFT" && keyeight == "RIGHT" && keynine == "B" && keyten == "A" && keyeleven == "START") {
-                    document.getElementById("konami").style.display = "block";
-                 }
-
-                 else {
-                    document.getElementById("konami").style.display = "none";
-                 }
-
-                 console.log(warrior());
-
-            };
-					
-
-		</script>
-
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+        <script src="/assets/js/warrior.js"></script>
 	</body>
 </html>
